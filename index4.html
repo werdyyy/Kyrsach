@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mix-Sport</title>
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    
+</head>
+
+<header>
+
+  <img src="images/logo.jpg" id="logo-image">
+
+  <nav>
+
+      <p id="logo-text"><a href="index.html">Mix-Sport</a></p>
+
+     <ul id="main-nav">
+      <li><a href="index2.html">Клуб</a></li>
+      <li><a href="index3.html">Расписание</a></li>
+      <li><a href="index4.html">Абонименты</a></li>
+      <li><a href="#">Контакты</a></li>
+     </ul>
+
+  </nav>
+
+</header>
+
+
+<body>
+
+  <section class="swiper mySwiper">
+
+    <div class="swiper-wrapper">
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="/images/card.png" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Классическая карта</span>
+          <p class="card__text">Классическая карта включает в себя основные залы для тренировки, групповые тренировки и неограниченное посещение.</p>
+          <button class="card__btn">Подробнее</button>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="/images/card.png" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Платинум карта</span>
+          <p class="card__text">Платинум карта включает в себя все возможности клуба, с предоставлением отдельной раздевалки с хамамом</p>
+          <button class="card__btn">Подробнее</button>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="/images/card.png" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Дневная карта</span>
+          <p class="card__text">Дневной тариф включает в себя посещение зала и групповых программ до 16-00, с условием обычной раздевалки</p>
+          <button class="card__btn">Подробнее</button>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="/images/card.png" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Детская карта</span> 
+          <p class="card__text">Карта включает в себя посещение групповых программ для детей, не достигших 14 лет</p>
+          <form action="#" target="_blank">
+          <button class="card__btn">Подробнее</button>
+        </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="libs/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+</body>
+</html>
